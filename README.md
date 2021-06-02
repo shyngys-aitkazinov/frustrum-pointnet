@@ -6,4 +6,4 @@ Paper implemented by <a href="https://www.linkedin.com/in/shyngys-aitkazinov-004
 
 ## Chronological order of the Development
 
-1. Dataset downloading and preprocessing scripts
+1. Dataset downloading (from this <a href="https://shapenet.cs.stanford.edu/media/frustum_data.zip" target="_blank"> link</a>) and making __dataset_test.ipynb__ notebook 

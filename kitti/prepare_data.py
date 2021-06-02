@@ -15,7 +15,7 @@ ROOT_DIR = os.path.dirname(BASE_DIR)
 sys.path.append(BASE_DIR)
 sys.path.append(os.path.join(ROOT_DIR, 'mayavi'))
 import kitti_util as utils
-import cPickle as pickle
+import pickle as pickle
 from kitti_object import *
 import argparse
 
@@ -34,13 +34,13 @@ def extract_pc_in_box3d(pc, box3d):
 def extract_pc_in_box2d(pc, box2d):
     ''' pc: (N,2), box2d: (xmin,ymin,xmax,ymax) '''
     box2d_corners = np.zeros((4,2))
-    box2d_corners[0,:] = [box2d[0],box2d[1]] 
-    box2d_corners[1,:] = [box2d[2],box2d[1]] 
-    box2d_corners[2,:] = [box2d[2],box2d[3]] 
-    box2d_corners[3,:] = [box2d[0],box2d[3]] 
+    box2d_corners[0,:] = [box2d[0],box2d[1]]
+    box2d_corners[1,:] = [box2d[2],box2d[1]]
+    box2d_corners[2,:] = [box2d[2],box2d[3]]
+    box2d_corners[3,:] = [box2d[0],box2d[3]]
     box2d_roi_inds = in_hull(pc[:,0:2], box2d_corners)
     return pc[box2d_roi_inds,:], box2d_roi_inds
-     
+
 def demo():
     import mayavi.mlab as mlab
     from viz_util import draw_lidar, draw_lidar_simple, draw_gt_boxes3d
@@ -501,6 +501,6 @@ if __name__=='__main__':
         extract_frustum_data_rgb_detection(\
             os.path.join(BASE_DIR, 'rgb_detections/rgb_detection_val.txt'),
             'training',
-            os.path.join(BASE_DIR, output_prefix+'val_rgb_detection.pickle'),
+            os.path.join(BASE_DIR, output_prefix + 'val_rgb_detection.pickle'),
             viz=False,
             type_whitelist=type_whitelist) 
