@@ -1,2 +1,7 @@
 .ipynb_checkpoints
 __pycache__
+*.png
+*.pickle
+*.bin
+events.out.tfevents.*
+*.txt
