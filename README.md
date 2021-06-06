@@ -13,4 +13,4 @@ Paper implemented by <a href="https://www.linkedin.com/in/shyngys-aitkazinov-004
 
 
 ## Download pre-trained model
-Please, Ddondfrom this <a href="https://drive.google.com/file/d/1UaGkicn9PQC42-o8hvR7DZALY_GyY9ia/view?usp=sharing" target="_blank"> model</a>)
+Please, download model from this link: <a href="https://drive.google.com/file/d/1UaGkicn9PQC42-o8hvR7DZALY_GyY9ia/view?usp=sharing" target="_blank"> model</a>)
